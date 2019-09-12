@@ -1,6 +1,7 @@
 # 激活工具
 
-此页面收藏激活工具类，部分软件授权工具等。
+此页面收藏激活工具类，部分软件授权工具等。  
+最后更新于： {docsify-updated} 
 
 ***
 
@@ -13,6 +14,7 @@
 >来源：https://www.zzmark.top/
 
 >备注：msdn下载站：http://msdn.itellyou.cn/
+>
 
 ***
 

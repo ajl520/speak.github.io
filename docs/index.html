@@ -2,40 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>资源库</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
-  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
-  <!-- 上一页和下一页按钮 -->
-  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
-  <!-- 引入 PHP 代码高亮插件 -->
-  <script src="//unpkg.com/prismjs/components/prism-php.js"></script>
-
 
 </head>
 <body>
   <div id="app">加载中.....</div>
+
   <script>
     window.$docsify = {
-      name: '',
-      repo: ''
+
+      //文档标题，会显示在侧边栏顶部。
+      name: '资源库',
+
+      //加载自定义侧边栏。设置为 true 后会加载 _sidebar.md 文件。
+      loadSidebar: 'pages/_sidebar.md',
+
+      //设置生成目录的最大层级
+      subMaxLevel: 2,
+
+      //GitHub标志及跳转网站
+      repo: 'https://github.com/ajl0943/speak.github.io',
+
+      //全文搜索
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: 'auto', // or 'auto'[]
+        placeholder: '搜索',
+        noData: '找不到结果呢，亲!',
+        // 搜索标题的最大程级, 1 - 6
+        depth: 6
+      },
+
+      //显示文档更新日期
+      formatUpdated: '{YYYY}.{MM}.{DD} {HH}:{mm}',
+
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-
-
-  <script>
-    window.$docsify = {
-      name: '资源库',
-      loadSidebar: true,
-      subMaxLevel: 2,
-      formatUpdated: '{MM}/{DD} {HH}:{mm}',
-      repo: 'https://github.com/ajl0943/speak.github.io'
-
-    }
-  </script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
 
 
 </body>
